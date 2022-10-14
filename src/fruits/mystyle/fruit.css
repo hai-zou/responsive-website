@@ -1,0 +1,96 @@
+/******************* 产品分类部分begin *************************/
+#zh_fruit {
+	padding-top: 20px;
+	margin-bottom: 20px;
+}
+
+#zh_fruit .container {
+	background-color: #fff;
+}
+
+#zh_fruit h2 {
+	padding: 10px 0;
+}
+
+
+#zh_fruit .shuxing p {
+	font-size: 16px;
+	padding: 15px 0;
+	margin-bottom: 0;
+}
+
+.jumbotron {
+	padding: 10px;
+	/* max-height: 210px; */
+	/* overflow: hidden; */
+	background-color: #fff;
+}
+
+
+ul {
+	list-style-type: none;
+}
+
+.nav {
+	margin: 0 auto 20px;
+	text-align: center;
+	font-size: 0;
+}
+
+.nav li {
+	display: inline-block;
+	margin: 5px 5px;
+	padding: 10px 20px;
+	font-size: 14px;
+	color: #333;
+	background-color: #ccc;
+	cursor: pointer;
+}
+
+.nav .active {
+	color: #fff;
+	background-color: #21b384;
+}
+
+
+.filtr-item {
+	display: inline-block;
+	width: 20%;
+	padding: 10px;
+}
+
+.filtr-item img {
+	width: 100%;
+}
+
+@media (max-width:1200px) {
+	.filtr-item {
+		width: 25%;
+	}
+
+	#zh_fruit .shuxing p {
+		padding: 8px 0;
+	}
+}
+
+@media (max-width:991px) {
+	.filtr-item {
+		width: 33.33%;
+	}
+
+	#zh_fruit .shuxing p {
+		padding: 5px 0;
+	}
+}
+
+@media (max-width:640px) {
+	.filtr-item {
+		width: 50%;
+	}
+
+	#zh_fruit .shuxing p {
+		padding: 5px 0;
+	}
+}
+
+/* ***************************产品分类部分end ********************************/

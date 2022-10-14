@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>direo</title>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.css">
+  <!-- 字体图标 -->
+  <link rel="stylesheet" href="../../lib/font-awesome-4.7.0/css/font-awesome.css">
+  <!-- 导入自己的样式 -->
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="../../lib/jquery/jquery.js"></script>
+  <script src="./js/index.js"></script>
+</head>
+
+<body>
+  <!-- 主页 -->
+  <div id="home">
+    <div class="mask"></div>
+    <nav>
+      <div class="container">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fa fa-bars"></i>
+        </label>
+        <label class="logo">Direo</label>
+        <ul>
+          <li><a class="active" href="#">首页</a></li>
+          <li><a href="#">活动</a></li>
+          <li><a href="#">美食</a></li>
+          <li><a href="#">关于</a></li>
+          <li><a href="#">目的地</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="home-info">
+      <h1>找到最好的地方</h1>
+      <p>所有顶级地点-从餐厅和俱乐部，到美术馆，著名景点等等。</p>
+      <div class="box">
+        <form action="#">
+          <input type="text" class="form-control input-lg" placeholder="你在找什么?" />
+          <select id="some" class="form-control input-lg">
+            <option value="null">选择一个类别</option>
+            <option value="qc">汽车</option>
+            <option value="jy">教育</option>
+            <option value="sj">事件</option>
+          </select>
+          <select id="site" class="form-control input-lg">
+            <option value="null">选择一个位置</option>
+            <option value="jx">江西</option>
+            <option value="sh">上海</option>
+            <option value="sz">深圳</option>
+          </select>
+          <button class="btn btn-success btn-lg">搜索</button>
+        </form>
+      </div>
+      <ul>
+        <li>
+          餐馆
+        </li>
+        <li>地方</li>
+        <li>购物</li>
+        <li>饭店</li>
+      </ul>
+    </div>
+  </div>
+  <!-- active -->
+  <section id="active">
+    <div class="container">
+      <div class="title">
+        <h3>您想尝试哪种活动？</h3>
+        <p>发现按类别分类的最佳餐厅，购物，酒店，咖啡馆和世界各地的景点。</p>
+      </div>
+      <div class="items">
+        <div class="col-md-4">
+          <div class="item">
+            <img src="./images/cat1.jpg" alt="">
+            <div class="mask">
+              <div class="box">
+                <p>餐馆</p>
+                <span>48个发布</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 ">
+          <div class="item">
+            <img src="./images/cat2.jpg" alt="">
+            <div class="mask">
+              <div class="box">
+                <p>地点与目的地</p>
+                <span>74个发布</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 ">
+          <div class="item">
+            <img src="./images/cat3.jpg" alt="">
+            <div class="mask">
+              <div class="box">
+                <p>购物与商店</p>
+                <span>27个发布</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 ">
+          <div class="item">
+            <img src="./images/cat4.jpg" alt="">
+            <div class="mask">
+              <div class="box">
+                <p>艺术史</p>
+                <span>103个发布</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 ">
+          <div class="item">
+            <img src="./images/cat5.jpg" alt="">
+            <div class="mask">
+              <div class="box">
+                <p>酒店与旅游</p>
+                <span>11个发布</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 ">
+          <div class="item">
+            <img src="./images/cat6.jpg" alt="">
+            <div class="mask">
+              <div class="box">
+                <p>食物与饮料</p>
+                <span>29个发布</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- house -->
+  <section id="house">
+    <div class="container">
+      <div class="title">
+        <h3>全国各地美食</h3>
+        <p>探索世界各地的热门美食</p>
+      </div>
+      <div class="items">
+        <div class="col-md-4">
+          <div class="item">
+            <img src="./images/p1.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3>法兰德斯热风系统</h3>
+            <p><span class="s1">4.5</span> <span class="s2">$55.00</span> <span class="s3">现在开门了</span></p>
+            <p class="p1"><i class="fa fa-map-marker"></i> 美国洛杉矶</p>
+            <p class="p1"><i class="fa fa-phone"></i>（415）796-3633</p>
+            <p class="p1"><i class="fa fa-calendar-check-o"></i> 发表于2个月前</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="item">
+            <img src="./images/p2.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3>悉尼餐厅塔</h3>
+            <p><span class="s1">4.5</span> <span class="s2">$55.00</span> <span class="s3">现在开门了</span></p>
+            <p class="p1"><i class="fa fa-map-marker"></i> 美国洛杉矶</p>
+            <p class="p1"><i class="fa fa-phone"></i>（415）796-3633</p>
+            <p class="p1"><i class="fa fa-calendar-check-o"></i> 发表于2个月前</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="item">
+            <img src="./images/p3.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3>功夫食品和饮料</h3>
+            <p><span class="s1">4.5</span> <span class="s2">$55.00</span> <span class="s3">现在开门了</span></p>
+            <p class="p1"><i class="fa fa-map-marker"></i> 美国洛杉矶</p>
+            <p class="p1"><i class="fa fa-phone"></i>（415）796-3633</p>
+            <p class="p1"><i class="fa fa-calendar-check-o"></i> 发表于2个月前</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="item">
+            <img src="./images/p4.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3>最喜欢的地方雾银行</h3>
+            <p><span class="s1">4.5</span> <span class="s2">$55.00</span> <span class="s3">现在开门了</span></p>
+            <p class="p1"><i class="fa fa-map-marker"></i> 美国洛杉矶</p>
+            <p class="p1"><i class="fa fa-phone"></i>（415）796-3633</p>
+            <p class="p1"><i class="fa fa-calendar-check-o"></i> 发表于2个月前</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="item">
+            <img src="./images/p5.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3>法兰德斯热风系统</h3>
+            <p><span class="s1">4.5</span> <span class="s2">$55.00</span> <span class="s3">现在开门了</span></p>
+            <p class="p1"><i class="fa fa-map-marker"></i> 美国洛杉矶</p>
+            <p class="p1"><i class="fa fa-phone"></i>（415）796-3633</p>
+            <p class="p1"><i class="fa fa-calendar-check-o"></i> 发表于2个月前</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="item">
+            <img src="./images/p6.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3>商店服装购物中心</h3>
+            <p><span class="s1">4.5</span> <span class="s2">$55.00</span> <span class="s3">现在开门了</span></p>
+            <p class="p1"><i class="fa fa-map-marker"></i> 美国洛杉矶</p>
+            <p class="p1"><i class="fa fa-phone"></i>（415）796-3633</p>
+            <p class="p1"><i class="fa fa-calendar-check-o"></i> 发表于2个月前</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- thing -->
+  <section id="thing">
+    <div class="container">
+      <div class="title">
+        <h3>为什么选择Direo开展业务？</h3>
+        <p>探索世界各地的热门房源</p>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="./images/mobile.png" alt="">
+        </div>
+        <div class="col-md-6">
+          <div class="item">
+            <div class="left1">
+              <i class="fa fa-check-circle-o"></i>
+            </div>
+            <div class="right">
+              <h5>索赔清单</h5>
+              <p>圣人occaecat cupidatat非偶然事件发生在暗中犯下罪过。</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="left2">
+              <i class="fa fa-camera-retro"></i>
+            </div>
+            <div class="right">
+              <h5>付费清单</h5>
+              <p>圣人occaecat cupidatat非偶然事件发生在暗中犯下罪过。</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="left3">
+              <i class="fa fa-spinner"></i>
+            </div>
+            <div class="right">
+              <h5>促进您的业务</h5>
+              <p>圣人occaecat cupidatat非偶然事件发生在暗中犯下罪过。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- place -->
+  <section id="place">
+    <div class="container">
+      <div class="title">
+        <h3>我们爱的目的地</h3>
+        <p>按城市浏览世界各地的最佳房源</p>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="item">
+            <img src="./images/place1.jpg" alt="">
+            <div class="mask">
+              <span>英国伦敦</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="item">
+            <img src="./images/place2.png" alt="">
+            <div class="mask">
+              <span>纽约</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="item">
+            <img src="./images/place3.png" alt="">
+            <div class="mask">
+              <span>悉尼</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="item">
+            <img src="./images/place4.png" alt="">
+            <div class="mask">
+              <span>法国巴黎</span>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- rely -->
+  <section id="rely">
+    <div class="container">
+      <div class="title text-center">
+        <h3>受到4000多个用户的信赖</h3>
+        <p>这是人们对Direo的评价</p>
+        <img src="./images/tthumb1.jpg" alt="">
+        <h5>弗朗西斯·伯顿</h5>
+        <p class="p-name">加拿大多伦多</p>
+        <p>非故意的圣人occaecat cupidatat在非官方的罪犯办公室中，非偶然的圣人occaecat cupidatat。</p>
+        <p>Occaecat cupidatat非偶然的罪魁祸首mollit。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <div class="text-center">
+      <p>联系我们</p>
+    </div>
+  </footer>
+</body>
+
+</html>

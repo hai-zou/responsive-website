@@ -1,0 +1,151 @@
+#title .container {
+  background-color: #fff;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+#title .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#title .row h1 {
+  font-size: 40px;
+  text-shadow: 5px 5px 5px #666;
+  margin-bottom: 30px;
+}
+
+#title .row h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#title .row p {
+  line-height: 20px;
+  font-size: 18px;
+  color: #8492A6;
+}
+
+#title img {
+  width: 100%;
+  box-shadow: 0 1rem 3rem rgba(31, 45, 61, 0.125) !important;
+  border-radius: 0.25rem !important;
+  height: 375px;
+}
+
+/* 工具 */
+#toolImg .container {
+  padding: 35px 0 0;
+}
+
+#toolImg .item {
+  /* border: 1px solid #000; */
+  box-shadow: 0 1rem 3rem rgba(31, 45, 61, 0.125) !important;
+  border-radius: 5px;
+  margin-bottom: 35px;
+}
+
+#toolImg .item a {
+  display: block;
+  color: #676f72 !important;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 10px 0 8px 5px;
+}
+
+#toolImg .item p {
+  color: #676f72 !important;
+  font-size: 16px;
+  margin-left: 8px;
+}
+
+#toolImg .item img {
+  height: 200px;
+  width: 100%;
+}
+
+/* 最新上传 */
+#new .container {
+  background-color: #fff;
+}
+
+#new h5 {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+#new .card .col-md-6 {
+  padding: 10px 30px;
+}
+
+
+#new .card .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
+  border: 1px solid #EFF2F7;
+  height: 75px;
+}
+
+#new .card .row img {
+  padding: 5px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+
+#new .card .row h6 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+#new .card .row p {
+  font-size: 13px;
+  color: #8492A6 !important;
+}
+
+#new .card .row span {
+  color: #8492A6 !important;
+}
+
+/* 媒体查询 */
+@media (max-width:768px) {
+
+  #toolImg .container {
+    padding: 20px;
+  }
+
+  #new .card .row img {
+    margin-left: -10px;
+  }
+
+  #new .card .row h6 {
+    font-size: 14px;
+  }
+
+  #new .card .row p {
+    font-size: 11px;
+    height: 30px;
+    overflow: hidden;
+  }
+}
+
+@media (max-width:540px) {
+
+  #toolImg .row .item img {
+    height: 150px;
+  }
+
+  #toolImg .row .item a {
+    font-size: 12px;
+  }
+
+  #toolImg .row .item p {
+    font-size: 12px;
+  }
+}

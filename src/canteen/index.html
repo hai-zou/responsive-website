@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>餐厅</title>
+
+    <!-- Bootstrap核心样式文件-->
+    <link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!--导入你自己样式或者其他文件-->
+    <link href="css/index.css" rel="stylesheet">
+    <!-- 引入jQuery -->
+    <script src="../../lib/jquery/jquery.js"></script>
+    <!-- 引入所有Bootstrap的JS插件 -->
+    <script src="../../lib/bootstrap/js/bootstrap.js"></script>
+    <!-- 引入自己的JS文件 -->
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header id="zh_header">
+        <!-- 导航栏 -->
+        <nav>
+            <div class="container">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fa fa-bars"></i>
+                </label>
+                <label class="logo">
+                    餐厅
+                </label>
+                <ul>
+                    <li class="active"><a href="#">家</a></li>
+                    <li><a href="#">服务</a></li>
+                    <li><a href="#">关于</a></li>
+                    <li><a href="#">画廊</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- /头部 -->
+
+    <!--轮播图-->
+    <section id="banner">
+        <div class="container">
+            <div class="slide">
+                <div class="banner-info">
+                    <h1>每天烤新鲜</h1>
+                    <p>今天很高兴为您做饭</p>
+                    <div class="more">
+                        <button>学到更多</button>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-pos">
+                <div class="col-md-3">
+                    <div class="banner-pos-info">
+                        <h3>我们的面包</h3>
+                        <p>举一个简单的例子，我们当中谁曾进行过艰苦的体育锻炼。</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="banner-pos-info">
+                        <h3>最好的饼干</h3>
+                        <p>举一个简单的例子，我们当中谁曾进行过艰苦的体育锻炼。</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="banner-pos-info">
+                        <h3>结婚蛋糕</h3>
+                        <p>举一个简单的例子，我们当中谁曾进行过艰苦的体育锻炼。</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="banner-pos-info">
+                        <h3>馅饼和馅饼</h3>
+                        <p>举一个简单的例子，我们当中谁曾进行过艰苦的体育锻炼。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/轮播图-->
+
+    <!-- 欢迎 -->
+    <section id="welcome">
+        <div class="container">
+            <h2>欢迎！</h2>
+            <p>我们实现它，每天为您带来惊喜。</p>
+            <div class="welcome-grids">
+                <div class="col-md-3 col-xs-6 welcome-grid">
+                    <div class="welcome-grd">
+                        <div class="icons">
+                            <span class="glyphicon glyphicon-cutlery"></span>
+                        </div>
+                        <h4>我们的面包</h4>
+                        <p>但是，谁比谁乐于发现自己的权利，谁有权找到缺点</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6 welcome-grid">
+                    <div class="welcome-grd">
+                        <div class="icons">
+                            <span class="glyphicon glyphicon-fire" aria-hidden="true"></span>
+                        </div>
+                        <h4>最好的饼干</h4>
+                        <p>但是，谁比谁乐于发现自己的权利，谁有权找到缺点</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6 welcome-grid">
+                    <div class="welcome-grd">
+                        <div class="icons">
+                            <span class="glyphicon glyphicon-filter" aria-hidden="true"></span>
+                        </div>
+                        <h4>结婚蛋糕</h4>
+                        <p>但是，谁比谁乐于发现自己的权利，谁有权找到缺点</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6 welcome-grid">
+                    <div class="welcome-grd">
+                        <div class="icons">
+                            <span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+                        </div>
+                        <h4>馅饼和馅饼</h4>
+                        <p>但是，谁比谁乐于发现自己的权利，谁有权找到缺点</p>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </section>
+    <!-- /欢迎 -->
+
+    <!-- banner-text -->
+    <section id="banner-text">
+        <div class="container">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="./imgs/1.jpg" alt="...">
+                        <div class="carousel-caption">
+                            <h1>用新鲜出炉的甜食好好对待自己</h1>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./imgs/2.jpg" alt="...">
+                        <div class="carousel-caption">
+                            <h1>大家都知道，好好对待自己</h1>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./imgs/3.jpg" alt="...">
+                        <div class="carousel-caption">
+                            <h1>享受我们美味的烘焙产品！</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- /banner-text -->
+
+    <!-- services -->
+    <section id="services">
+        <div class="container">
+            <h2>经典法式面包的秘密</h2>
+            <p>我们实现它，每天为您带来惊喜。</p>
+            <div class="services-content clearfix">
+                <div class="col-xs-6 services-main">
+                    <div class="col-md-6 ">
+                        <img src="./imgs/55.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 message">
+                        <h4>很棒的味道</h4>
+                        <p>促销平台，最昂贵的人Nullam tincidunt的巧克力，维他命（egestas vitae）和congumsan。</p>
+                    </div>
+                </div>
+                <div class="col-xs-6 services-main">
+                    <div class="col-md-6 ">
+                        <img src="./imgs/77.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 message">
+                        <h4>最好的质量</h4>
+                        <p>促销平台，最昂贵的人Nullam tincidunt的巧克力，维他命（egestas vitae）和congumsan。</p>
+                    </div>
+                </div>
+                <div class="col-xs-6 services-main">
+                    <div class="col-md-6 ">
+                        <img src="./imgs/66.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 message">
+                        <h4>新鲜制作</h4>
+                        <p>促销平台，最昂贵的人Nullam tincidunt的巧克力，维他命（egestas vitae）和congumsan。</p>
+                    </div>
+                </div>
+                <div class="col-xs-6 services-main">
+                    <div class="col-md-6 ">
+                        <img src="./imgs/88.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 message">
+                        <h4>优质的服务</h4>
+                        <p>促销平台，最昂贵的人Nullam tincidunt的巧克力，维他命（egestas vitae）和congumsan。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /services -->
+
+    <!-- people -->
+    <section id="people">
+        <div class="container">
+            <h2>我们的大厨</h2>
+            <p>我们实现它，每天为您带来惊喜。</p>
+            <div class="people-main clearfix">
+                <div class="col-md-4 people-info">
+                    <span>
+                        <img src="./imgs/chef1.jpg" alt="">
+                    </span>
+                    <p>也没有任何人属于他自己想要获得的，只能独自承受痛苦的痛苦，
+                        以及他们痛苦的痛苦，但是由于他们没有什么伟大的东西而在劳动和痛苦中永远无法依附于寻求快乐，就像跌倒的时代一样。</p>
+                </div>
+                <div class="col-md-4 people-info">
+                    <span>
+                        <img src="./imgs/chef2.jpg" alt="">
+                    </span>
+                    <p>也没有任何人属于他自己想要获得的，只能独自承受痛苦的痛苦，
+                        以及他们痛苦的痛苦，但是由于他们没有什么伟大的东西而在劳动和痛苦中永远无法依附于寻求快乐，就像跌倒的时代一样。</p>
+                </div>
+                <div class="col-md-4 people-info">
+                    <span>
+                        <img src="./imgs/chef3.jpg" alt="">
+                    </span>
+                    <p>也没有任何人属于他自己想要获得的，只能独自承受痛苦的痛苦，
+                        以及他们痛苦的痛苦，但是由于他们没有什么伟大的东西而在劳动和痛苦中永远无法依附于寻求快乐，就像跌倒的时代一样。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /people -->
+
+    <!-- 尾部 -->
+    <footer>
+        <div class="container">
+            <h3>尾部！！！</h3>
+        </div>
+    </footer>
+    <!-- / 尾部 -->
+
+</body>
+
+</htm

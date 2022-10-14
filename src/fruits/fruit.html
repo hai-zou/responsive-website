@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>水果大全</title>
+	<!-- Bootstrap样式文件-->
+	<link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+	<!-- 导入字体样式 -->
+	<link rel="stylesheet" href="../../lib/font-awesome-4.7.0/css/font-awesome.css">
+	<!--导入自己样式或者其他文件-->
+	<link href="mystyle/index.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="mystyle/fruit.css" />
+	<!-- 引入jQuery -->
+	<script src="../../lib/jquery/jquery.js"></script>
+	<script src="../../lib/jquery/jquery.filterizr.js"></script>
+	<!-- 引入所有Bootstrap的JS插件 -->
+	<script src="../../lib/bootstrap/js/bootstrap.js"></script>
+	<!-- 引入自己的JS文件 -->
+	<script src="myscript/fruit.js"></script>
+</head>
+
+<body>
+	<!----------------- 头部 begin---------------->
+	<header id="zh_header">
+		<!-- 导航栏 -->
+		<nav>
+			<div class="container">
+				<input type="checkbox" id="check">
+				<label for="check" class="checkbtn">
+					<i class="fa fa-bars"></i>
+				</label>
+				<label class="logo">
+					<img src="images/gzy_logo_2.png" alt="">
+				</label>
+				<ul>
+					<li><a href="index.html">网站首页</a></li>
+					<li><a href="information.html">水果资讯</a></li>
+					<li><a class="active" href="fruit.html">水果大全</a></li>
+					<li><a href="about.html">关于</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<!----------------- 头部 end------------------>
+
+	<div id="app">
+		<!------------------ 内容部分begin --------------->
+
+		<section id="zh_fruit">
+			<div class="container">
+				<!-- 标题 -->
+				<h2 class="text-center"><strong>水果分类</strong></h2>
+				<ul class="nav">
+					<li class="active" data-filter="all">全部</li>
+					<li data-filter="1">春季水果</li>
+					<li data-filter="2">夏季水果</li>
+					<li data-filter="3">秋季水果</li>
+					<li data-filter="4">温热性水果</li>
+					<li data-filter="5">凉性水果</li>
+				</ul>
+
+				<div class="jq22">
+					<div class="filtr-item" data-category="1, 5">
+						<div class=" text-right thumbnail">
+							<div class="shuxing text-center">
+								<img src="./images/icon_cm.jpg" alt="">
+								<p>草莓</p>
+							</div>
+						</div>
+					</div>
+					<div class="filtr-item" data-category="1, 2, 4">
+						<div class=" text-right thumbnail">
+							<div class="shuxing text-center">
+								<img src="./images/icon_mg.jpg" alt="">
+								<p>芒果</p>
+							</div>
+						</div>
+					</div>
+					<div class="filtr-item" data-category="2, 5">
+						<div class=" text-right thumbnail">
+							<div class="shuxing text-center">
+								<img src="./images/icon_xj.jpg" alt="">
+								<p>香蕉</p>
+							</div>
+						</div>
+					</div>
+					<div class="filtr-item" data-category="1, 2">
+						<div class="text-right thumbnail">
+							<div class="shuxing text-center">
+								<img src="./images/icon_yt.jpg" alt="">
+								<p>樱桃</p>
+							</div>
+						</div>
+					</div>
+					<div class="filtr-item" data-category="1, 3, 4">
+						<div class=" text-right thumbnail">
+							<div class="shuxing text-center">
+								<img src="./images/icon_pg.jpg" alt="">
+								<p>苹果</p>
+							</div>
+						</div>
+					</div>
+					<div class="filtr-item" data-category="2, 3">
+						<div class="text-right thumbnail">
+							<div class="shuxing text-center">
+								<img src="./images/icon_jz.jpg" alt="">
+								<p>橘子</p>
+							</div>
+
+						</div>
+					</div>
+					<div class="filtr-item" data-category="2, 3">
+						<div class="text-right thumbnail">
+							<div class="shuxing text-center">
+								<img src="./images/icon_sz.jpg" alt="">
+								<p>山楂</p>
+							</div>
+						</div>
+					</div>
+					<div class="filtr-item" data-category="2, 3">
+						<div class="text-right thumbnail">
+							<div class="shuxing text-center">
+								<img src="./images/icon_pt.jpg" alt="">
+								<p>葡萄</p>
+							</div>
+						</div>
+					</div>
+					<div class="filtr-item" data-category="3, 4">
+						<div class="text-right thumbnail">
+							<div class="shuxing text-center">
+								<img src="./images/icon_lzhi.jpg" alt="">
+								<p>荔枝</p>
+							</div>
+						</div>
+					</div>
+					<div class="filtr-item" data-category="1, 3">
+						<div class="text-right thumbnail">
+							<div class="shuxing text-center">
+								<img src="./images/icon_bl.jpg" alt="">
+								<p>菠萝</p>
+							</div>
+						</div>
+					</div>
+					<div class="filtr-item" data-category="1, 3">
+						<div class="text-right thumbnail">
+							<div class="shuxing text-center">
+								<img src="./images/icon_x.jpg" alt="">
+								<p>杏</p>
+							</div>
+						</div>
+					</div>
+					<div class="filtr-item" data-category="2, 5">
+						<div class="text-right thumbnail">
+							<div class="shuxing text-center">
+								<img src="./images/icon_xg.jpg" alt="">
+								<p>西瓜</p>
+							</div>
+						</div>
+					</div>
+					<div class="filtr-item" data-category="4, 5">
+						<div class="text-right thumbnail">
+							<div class="shuxing text-center">
+								<img src="./images/icon_smt.jpg" alt="">
+								<p>水蜜桃</p>
+							</div>
+						</div>
+					</div>
+					<div class="filtr-item" data-category="4">
+						<div class="text-right thumbnail">
+							<div class="shuxing text-center">
+								<img src="./images/icon_sl.jpg" alt="">
+								<p>石榴</p>
+							</div>
+						</div>
+					</div>
+					<div class="filtr-item" data-category="4">
+						<div class="text-right thumbnail">
+							<div class="shuxing text-center">
+								<img src="./images/icon_ll.jpg" alt="">
+								<p>榴莲</p>
+							</div>
+						</div>
+					</div>
+					<div class="filtr-item" data-category="5">
+						<div class="text-right thumbnail">
+							<div class="shuxing text-center">
+								<img src="./images/icon_mht.jpg" alt="">
+								<p>猕猴桃</p>
+							</div>
+						</div>
+					</div>
+					<div class="filtr-item abc" data-category="5">
+						<div class="text-right thumbnail">
+							<div class="shuxing text-center">
+								<img src="./images/icon_li.jpg" alt="">
+								<p>梨</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!------------------- 内容部分end ----------------->
+
+	</div>
+
+	<!----------------- 尾部 begin---------------->
+	<footer id="zh_footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 text-center">
+					<p>联系我们</p>
+					<p>电话：177-7903-6853</p>
+					<p>邮箱地址：97684540@qq.com</p>
+				</div>
+				<div class="link text-center col-lg-6 hidden-xs hidden-sm hidden-md">
+					<p>学校：新余学院</p>
+					<p>Copyright&copy;2020byzh</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!----------------- 尾部 end------------------>
+
+
+</body>
+
+</html>

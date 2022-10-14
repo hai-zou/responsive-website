@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>果之园</title>
+	<!-- 引入Bootstrap样式文件-->
+	<link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+	<!-- 导入字体样式 -->
+	<link rel="stylesheet" href="../../lib/font-awesome-4.7.0/css/font-awesome.css">
+	<!--导入自己样式或者其他文件-->
+	<link href="mystyle/index.css" rel="stylesheet">
+	<!-- 引入jQuery -->
+	<script src="../../lib/jquery/jquery.js"></script>
+	<!-- 引入所有Bootstrap的JS插件 -->
+	<script src="../../lib/bootstrap/js/bootstrap.js"></script>
+	<!-- 引入自己的JS文件 -->
+	<script src="myscript/index.js"></script>
+</head>
+
+<body>
+	<!----------------- 头部 begin---------------->
+	<header id="zh_header">
+		<!-- 导航栏 -->
+		<nav>
+			<div class="container">
+				<input type="checkbox" id="check">
+				<label for="check" class="checkbtn">
+					<i class="fa fa-bars"></i>
+				</label>
+				<label class="logo">
+					<img src="images/gzy_logo_2.png" alt="">
+				</label>
+				<ul>
+					<li><a class="active" href="#">网站首页</a></li>
+					<li><a href="information.html">水果资讯</a></li>
+					<li><a href="fruit.html">水果大全</a></li>
+					<li><a href="about.html">关于</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<!----------------- 头部 end------------------>
+	<div id="app">
+		<!----------------- 轮播图 begin---------------->
+		<section id="zh_carousel" class="carousel slide" data-ride="carousel">
+			<div class="container">
+				<!-- 轮播图下部分的三个小点 -->
+				<ol class="carousel-indicators">
+					<li data-target="#zh_carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#zh_carousel" data-slide-to="1"></li>
+					<li data-target="#zh_carousel" data-slide-to="2"></li>
+				</ol>
+				<!-- 轮播图部分 -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="images/sgnc_1.jpg" alt="...">
+						<div class="carousel-caption">
+							<h4>真理好比水果，只有熟透时才能采摘。</h4>
+						</div>
+					</div>
+					<div class="item">
+						<img src="images/gnqc_2.jpg" alt="...">
+						<div class="carousel-caption">
+							<h4>饭前吃水果，可以控制热量有利减肥。</h4>
+						</div>
+					</div>
+					<div class="item">
+						<img src="images/sgdg.jpg" alt="...">
+						<div class="carousel-caption">
+							<h4>美犹如盛夏的水果，是容易腐烂而难保持</h4>
+						</div>
+					</div>
+				</div>
+
+				<!-- Controls -->
+				<a class="left carousel-control" href="#zh_carousel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#zh_carousel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</section>
+		<!----------------- 轮播图 end------------------>
+
+
+		<!----------------- 热门资讯 begin---------------->
+		<section id="zh_product">
+			<div class="container">
+				<!-- 标题 -->
+				<div class="text-center">
+					<strong>热门资讯</strong>
+				</div>
+				<div class="row fruitItem">
+					<div class="col-md-4 hidden-xs">
+						<img class="img-thumbnail" src="images/info_1.jpg" alt="">
+					</div>
+					<div class="col-md-8 content">
+						<h4>芒果的热量高吗？</h4>
+						<p>
+							生活中有一个芒果三碗饭的说法，其实稍微有点夸张了。芒果的热量并不高，
+							100克可食用的芒果热量是35大卡，而一个小芒果可食部分大约有150克，热量也仅为53大卡。
+							由此可见芒果是热量比较低的食物，如果单纯从热量的角度来说，减肥期间是可以食用芒果的。
+						</p>
+						<ul>
+							<li><i class="fa fa-calendar"></i> 2020-05-20</li>
+							<li><i class="fa fa-commenting-o"></i> 99</li>
+							<li><i class="fa fa-thumbs-o-up"></i> 60</li>
+							<li class="tag hidden-xs">芒果</li>
+							<li class="tag hidden-xs">减肥</li>
+							<li class="tag hidden-xs">卡路里</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row fruitItem">
+					<div class="col-md-4 hidden-xs">
+						<img class="img-thumbnail" src="images/info_2.jpg" alt="">
+					</div>
+					<div class="col-md-8 content">
+						<h4>饭后吃水果好吗？</h4>
+						<p>
+							在吃饭之后再吃水果是一种不好的行为，对身体不好。
+							在吃饭后这段时间，大家的胃肠通常都饱和了，需要较长时间来消化吸收，
+							而水果最好是食用之后尽快消化为宜，在饭后吃水果就会导致水果在胃内堆积发酵，
+							容易出现腹胀、打嗝、反酸等不适反应。而且水果往往含很多糖分，
+							餐后吃容易导致能量摄入过多，埋下长肉肉的风险。
+						</p>
+						<ul>
+							<li><i class="fa fa-calendar"></i> 2020-05-18</li>
+							<li><i class="fa fa-commenting-o"></i> 134</li>
+							<li><i class="fa fa-thumbs-o-up"></i> 78</li>
+							<li class="tag hidden-xs">消化</li>
+							<li class="tag hidden-xs">饭后</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!----------------- 热门资讯 end------------------>
+
+
+		<!------------------ 热门水果begin ------------------>
+		<section id="zh_picture">
+
+			<!-- 图册内容，设置在栅格布局中 -->
+			<div class="container">
+				<!-- 标题 -->
+				<div class="text-center">
+					<strong>热门水果</strong>
+				</div>
+				<div class="box col-md-4 col-sm-6">
+					<div class="img thumbnail">
+						<img src="./images/cm.jpg" alt="">
+						<h6 class="text-success">
+							<p><span>功效：</span>营养价值丰富,富含丰富的维生素，胡罗卜素...等营养物质</p>
+							<p><span>禁忌：</span>草莓性凉，食用过多或者寒性体质的人群食用之后会加重身体内的寒性，引起脾胃虚寒</p>
+						</h6>
+					</div>
+					<div class="text">
+						<p>今天</p>
+					</div>
+				</div>
+				<div class="box col-md-4 col-sm-6">
+					<div class="img thumbnail">
+						<img src="./images/xj.jpg" alt="">
+						<h6 class="text-success">
+							<p><span>功效：</span>清肠通便、降低血压、消除水肿、解除忧郁、保护眼睛</p>
+							<p><span>禁忌：</span>香蕉不宜空腹食用，空腹吃香蕉不但影响胃酸分泌，还会因为营养摄入太单一造成贫血</p>
+						</h6>
+					</div>
+					<div class="text">
+						<p>你</p>
+					</div>
+				</div>
+				<div class="box col-md-4 col-sm-6">
+					<div class="img thumbnail">
+						<img src="./images/yt.jpg" alt="">
+						<h6 class="text-success">
+							<p><span>功效：</span>美白淡斑、防治贫血、、排毒通便、调理肠胃</p>
+							<p><span>禁忌：</span>樱桃性热，吃多了容易引发上火，喉咙痛等症状，有上火，溃疡症状慎食。糖尿病患者忌食。</p>
+						</h6>
+					</div>
+					<div class="text">
+						<p>吃</p>
+					</div>
+				</div>
+				<div class="box col-md-4 col-sm-6">
+					<div class="img thumbnail">
+						<img src="./images/xg.jpg" alt="">
+						<h6 class="text-success">
+							<p><span>功效：</span>清爽解渴、味道甘味多汁。含有大量葡萄糖、果糖及丰富的维生素C等物质</p>
+							<p><span>禁忌：</span>中医辨证属于脾胃虚寒、寒积腹痛、小便频数等属于虚冷体质的人均不宜多吃西瓜。</p>
+						</h6>
+					</div>
+					<div class="text">
+						<p>水果</p>
+					</div>
+				</div>
+				<div class="box col-md-4 col-sm-6">
+					<div class="img thumbnail">
+						<img src="./images/qc2.jpg" alt="">
+						<h6 class="text-success">
+							<p><span>功效：</span>延缓衰老、生津止渴、止呕功效、提神醒脑、增强抵抗、清肠通便</p>
+							<p><span>禁忌：</span>饭前或空腹时不宜食用橙子，否则它所含有机酸会刺激胃黏膜，对胃不利。口干不宜食用</p>
+						</h6>
+					</div>
+					<div class="text">
+						<p>了</p>
+					</div>
+				</div>
+				<div class="box col-md-4 col-sm-6">
+					<div class="img thumbnail">
+						<img src="./images/putao_1.jpg" alt="">
+						<h6 class="text-success">
+							<p><span>功效：</span>葡萄中的多种果酸有助于消化，适当多吃些葡萄，能健睥和胃。</p>
+							<p><span>禁忌：</span>体质虚弱，脾胃有虚寒的症状的人最好不要吃新鲜的葡萄，容易导致体质下降，引发寒症入侵。</p>
+						</h6>
+					</div>
+					<div class="text">
+						<p>吗</p>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<!------------------ 热门水果 end------------------>
+
+		<!----------------- 关于水果 begin---------------->
+		<section id="zh_about">
+
+			<div class="container">
+				<!-- 标题 -->
+				<div class="text-center">
+					<strong>关于水果</strong>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="alert alert-success" role="alert">
+							水果的妙用：熟木瓜+柿饼煎服，可治气喘性咳嗽、苹果皮+数片姜煮水：可止呕吐、经常感冒、咳嗽、气管敏感者：鲜柚留皮去核+正北杏、贝母、未经漂染银耳各一30克+蜜糖炖，强健肺部</div>
+						<div class="alert alert-info" role="alert">
+							成分：猕猴桃、鲜枣猕猴桃、鲜枣、草莓、枇杷、橙、橘、柿子、蓝莓等含有丰富的维生素C，现代家庭一般都有冰箱，许多人喜欢买大量水果放入。但水果存放的时间越长，维生素C损失就越多。</div>
+						<div class="alert alert-danger" role="alert">
+							水果的功效：降血压、减缓衰老、减肥瘦身、保养皮肤、明目、癌症的天敌、降低胆固醇、排毒、</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!----------------- 关于我们 end------------------>
+
+		<!----------------- 特色产品 begin---------------->
+		<section id="zh_special">
+
+			<div class="container">
+				<!-- 标题 -->
+				<div class="text-center">
+					<strong>特色水果</strong>
+				</div>
+				<div class="row">
+					<div class="col-lg-8">
+						<h4>赣南脐橙</h4>
+						<br>
+						<p>赣南脐橙果大形正，橙红鲜艳，光洁美观，可食率达85%，内容脆嫩，化渣，风味浓甜芳香，含果汁55%以上。</p>
+						<p>赣南脐橙已被列为全国十一大优势农产品之一，荣获“中华名果”等称号。</p>
+						<p>赣南脐橙作为江西省唯一产品，入围商务部，质检总局中欧地理标志协定谈判的地理标志产品清单。</p>
+					</div>
+					<div class="col-lg-4">
+						<img class="img-thumbnail" src="images/qc1.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!----------------- 特色产品 end------------------>
+
+	</div>
+
+
+	<!----------------- 尾部 begin---------------->
+	<footer id="zh_footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 text-center">
+					<p>联系我们</p>
+					<p>电话：177-7903-6853</p>
+					<p>邮箱地址：97684540@qq.com</p>
+				</div>
+				<div class="link text-center col-lg-6 hidden-xs hidden-sm hidden-md">
+					<p>学校：新余学院</p>
+					<p>Copyright&copy;2020byzh</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!----------------- 尾部 end------------------>
+</body>
+
+</html>

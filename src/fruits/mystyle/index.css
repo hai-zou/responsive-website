@@ -1,0 +1,443 @@
+/*********************通用样式 begin*****************************/
+body {
+	width: 100%;
+	color: #000;
+	font-family: "arial, helvetica, sans-serif";
+	background-color: rgb(233, 234, 237);
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+
+strong {
+	display: inline-block;
+	font-family: simsun;
+	font-size: 25px;
+	padding: 20px 0;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	height: 5px;
+	background: #e4e4e4;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: #9466ff;
+	background-image: -webkit-linear-gradient(45deg, hsla(0, 0%, 100%, .2) 25%, transparent 0, transparent 50%, hsla(0, 0%, 100%, .2) 0, hsla(0, 0%, 100%, .2) 75%, transparent 0, transparent);
+}
+
+#app {
+	padding: 0 20px;
+}
+
+/*********************通用样式 end*******************************/
+
+
+/*********************头部 begin*****************************/
+
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+#zh_header nav {
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+	height: 80px;
+	width: 100%;
+}
+
+#zh_header nav .logo img {
+	height: 60px;
+	margin-top: 6px;
+}
+
+#zh_header nav ul {
+	float: right;
+	margin-right: 10px;
+}
+
+#zh_header nav ul li {
+	display: inline-block;
+	margin: 0 5px;
+	line-height: 80px;
+}
+
+#zh_header nav ul li a {
+	color: black;
+	font-size: 17px;
+	padding: 15px 7px;
+	text-decoration: none;
+}
+
+#zh_header a.active,
+#zh_header a:hover {
+	border-bottom: 1px solid #9466ff;
+	transition: .5s;
+}
+
+#zh_header .checkbtn {
+	font-size: 30px;
+	color: black;
+	float: right;
+	line-height: 80px;
+	margin-right: 10px;
+	cursor: pointer;
+	display: none;
+}
+
+#zh_header #check {
+	display: none;
+}
+
+
+/*********************头部 end*******************************/
+
+
+
+
+/*********************轮播图 begin*****************************/
+#zh_carousel {
+	margin-top: 20px;
+}
+
+#zh_carousel .container {
+	padding: 0;
+	position: relative;
+}
+
+#zh_carousel .container .item .carousel-caption {
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 0;
+	margin: 0;
+	height: 40px;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+}
+
+#zh_carousel .container .carousel-inner {
+	border-radius: 6px;
+}
+
+/*********************轮播图 end*******************************/
+
+
+
+
+/*********************热门资讯 begin*****************************/
+#zh_product {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#zh_product .container {
+	background-color: #fff;
+}
+
+#zh_product .container .row {
+	border-top: 1px solid #999;
+	padding: 20px 0;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+#zh_product .row .content {
+	padding-top: 15px;
+	padding-bottom: 15px;
+
+}
+
+#zh_product .row .content p {
+	line-height: 30px;
+	margin-top: 20px;
+}
+
+#zh_product .row .content p a {
+	color: #999;
+}
+
+#zh_product .row .content h4 {
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+#zh_product .row .content h4 a {
+	color: black;
+}
+
+#zh_product .row .content ul li {
+	margin-top: 10px;
+	display: inline-block;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+#zh_product .row .content ul .tag {
+	background-color: rgb(33, 179, 132);
+	color: white;
+	float: right;
+	padding: 2px 4px;
+	border-radius: 5px;
+	font-size: 10px;
+}
+
+
+/*********************热门资讯 end*******************************/
+
+
+
+/********************热门水果begin ******************************/
+#zh_picture {
+	padding-bottom: 50px;
+}
+
+#zh_picture .container {
+	background-color: #fff;
+	padding-bottom: 30px;
+}
+
+#zh_picture .thumbnail h6 {
+	padding: 0 20px;
+}
+
+#zh_picture .thumbnail h6 p {
+	font-size: 15px;
+}
+
+#zh_picture .thumbnail h6 p span {
+	color: red;
+}
+
+#zh_picture .thumbnail:hover {
+	border: 1px solid red;
+
+}
+
+.box {
+	/* padding: 0; */
+	height: 310px;
+	margin-bottom: 20px;
+	position: relative;
+	overflow: hidden;
+	/* 从500px看到的效果 */
+	perspective: 500px;
+}
+
+.box .img {
+	position: absolute;
+	margin: 0;
+	width: 90%;
+	/* height: 100%; */
+	transition: 0.6s;
+}
+
+.box .img img {
+	width: 100%;
+	height: 100%;
+}
+
+.box:hover .img {
+	transform: rotateX(70deg);
+	transform-origin: center bottom;
+}
+
+.box .text {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: -100%;
+	background-color: #000;
+	color: white;
+	opacity: 0;
+	transition: 0.6s;
+	z-index: -1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box .text p {
+	font-size: 80px;
+	padding-bottom: 40px;
+}
+
+.box:hover .text {
+	top: 0;
+	opacity: 0.5;
+}
+
+
+/********************热门水果 end******************************/
+
+
+/*********************关于水果 begin*****************************/
+#zh_about {
+	padding-bottom: 50px;
+}
+
+#zh_about .container {
+	background-color: #fff;
+}
+
+#zh_about .container .row {
+	padding-bottom: 20px;
+}
+
+/*********************关于水果 end*******************************/
+
+
+/*********************特色产品 begin*******************************/
+#zh_special {
+	padding-bottom: 50px;
+}
+
+#zh_special .container {
+	background-color: #fff;
+	padding-bottom: 20px;
+}
+
+/*********************特色产品 end*******************************/
+
+
+/*********************尾部 begin*****************************/
+#zh_footer {
+	background-color: rgb(45, 50, 55);
+	width: 100%;
+	height: 150px;
+}
+
+#zh_footer .container {
+	color: white;
+	margin-top: 0px;
+	padding-top: 30px;
+}
+
+/*********************头部尾部 end*******************************/
+
+
+/*----------------------- 媒体查询 --------------------------*/
+
+@media (max-width:991px) {
+	#zh_header .logo {
+		font-size: 30px;
+		padding-left: 10px;
+	}
+
+	#zh_header nav ul li a {
+		font-size: 16px;
+	}
+
+	#zh_header .checkbtn {
+		display: block;
+	}
+
+	#zh_header nav {
+		position: relative;
+		background-color: #d1c2d3;
+	}
+
+	#zh_header ul {
+		position: absolute;
+		width: 100%;
+		height: 0;
+		background-color: #eef7f2;
+		box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+		top: 80px;
+		left: 0;
+		text-align: center;
+		overflow: hidden;
+		transition: all .5s;
+		z-index: 9999;
+	}
+
+	#zh_header nav ul li {
+		display: block;
+		margin: 40px 0;
+		line-height: 30px;
+	}
+
+	#zh_header a.active,
+	#zh_header a:hover {
+		border: none;
+		color: #0082e6;
+	}
+
+	#zh_header #check:checked~ul {
+		height: 350px;
+	}
+
+	#zh_carousel .container .item .carousel-caption {
+		top: 60%;
+		width: 60%;
+	}
+}
+
+
+
+
+@media (max-width:768px) {
+	.box {
+		height: 420px;
+	}
+}
+
+@media (max-width:640px) {
+	.box {
+		height: 360px;
+	}
+
+	#zh_carousel .container .item .carousel-caption {
+		top: 50%;
+		width: 80%;
+	}
+}
+
+@media (max-width:560px) {
+	.box {
+		height: 330px;
+	}
+}
+
+@media (max-width:460px) {
+	.box {
+		height: 310px;
+	}
+
+	#zh_carousel .container .item .carousel-caption {
+		top: 40%;
+		width: 100%;
+		display: none;
+	}
+
+	#zh_carousel .container .item .carousel-caption h4 {
+		font-size: 16px;
+	}
+
+}
+
+@media (max-width:430px) {
+	.box {
+		height: 300px;
+	}
+}
+
+@media (max-width:360px) {
+	.box {
+		height: 280px;
+	}
+}

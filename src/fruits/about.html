@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>关于果之园</title>
+	<!-- Bootstrap样式文件-->
+	<link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+	<!--导入自己样式或者其他文件-->
+	<link href="mystyle/index.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="mystyle/about.css" />
+	<link rel="stylesheet" type="text/css" href="../../lib/font-awesome-4.7.0/css/font-awesome.css" />
+	<!-- 引入jQuery -->
+	<script src="../../lib/jquery/jquery.js"></script>
+	<!-- 引入所有Bootstrap的JS插件 -->
+	<script src="../../lib/bootstrap/js/bootstrap.js"></script>
+</head>
+
+<body>
+	<!----------------- 头部 begin---------------->
+	<header id="zh_header">
+		<!-- 导航栏 -->
+		<nav>
+			<div class="container">
+				<input type="checkbox" id="check">
+				<label for="check" class="checkbtn">
+					<i class="fa fa-bars"></i>
+				</label>
+				<label class="logo">
+					<img src="images/gzy_logo_2.png" alt="">
+				</label>
+				<ul>
+					<li><a href="index.html">网站首页</a></li>
+					<li><a href="information.html">水果资讯</a></li>
+					<li><a href="fruit.html">水果大全</a></li>
+					<li><a class="active" href="about.html">关于</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<!----------------- 头部 end------------------>
+
+	<div id="app">
+		<!----------------- 关于果之园begin ---------------------->
+
+		<section id="zh_gzy">
+			<div class="container">
+				<div class="row">
+					<div class="text-center">
+						<strong>关于果之园</strong>
+					</div>
+					<div class="jumbotron clearfix">
+						<div class="text col-lg-8 col-xs-12">
+							<p>这是一个以水果为主题的网站。其中里面的图片都是网上搜索的，布局和排版都是自己构造的。</p>
+							<p>从网上找图片到构思出网页结构，再到编写出这个网站，历时七天。</p>
+							<p>这七天里，我学到了许多，让我在之前轻松惬意的日子里变得忙碌起来。</p>
+							<p>由于经验不足，网页设计的不是那么美观，其中也还有许多未考虑到的信息，功能也没有完全实现。</p>
+							<p>学习前端两个月，一入前端深似海，感觉自己只是学了点皮毛，希望在接下来的时间里继续努力！</p>
+						</div>
+						<div class="img col-lg-4 hidden-xs">
+							<img src="images/lb2.jpg" width="350px" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="zh_contact">
+			<div class="container">
+				<div class="row">
+					<div class="text-center">
+						<strong>联系</strong>
+					</div>
+					<div class="jumbotron">
+						<div class="contact">
+							<i data-toggle="tooltip" title="97684540" data-placement="top" class="fa fa-qq">
+								<img src="./images/QQ.jpg" alt="">
+							</i>
+							<i data-toggle="tooltip" title="17779036853" data-placement="top" class="fa fa-weixin">
+								<img src="./images/微信号.jpg" alt="">
+							</i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!----------------- 关于果之园begin ---------------------->
+
+	</div>
+
+	<!----------------- 尾部 begin---------------->
+	<footer id="zh_footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 text-center">
+					<p>联系我们</p>
+					<p>电话：177-7903-6853</p>
+					<p>邮箱地址：97684540@qq.com</p>
+				</div>
+				<div class="link text-center col-lg-6 hidden-xs hidden-sm hidden-md">
+					<p>学校：新余学院</p>
+					<p>Copyright&copy;2020byzh</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!----------------- 尾部 end------------------>
+
+
+	<script>
+		$(function () {
+			// $('#zh_contact i').mouseenter(function () {
+			// 	$('#zh_contact i img').animate({
+			// 		top: '-100px'
+			// 	})
+			// })
+			// $('#zh_contact i').mouseleave(function () {
+			// 	$('#zh_contact i img').animate({
+			// 		top: '50px'
+			// 	})
+			// })
+		})
+	</script>
+</body>
+
+</html>

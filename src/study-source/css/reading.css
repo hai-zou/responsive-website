@@ -1,0 +1,33 @@
+#message .container {
+  background-color: #fff;
+  padding-top: 15px;
+}
+
+#message .row {
+  margin: 20px 0;
+}
+
+#message h4 {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+#message p {
+  color: rgba(0, 0, 0, 0.6);
+  height: 100px;
+  overflow: hidden;
+}
+
+#message ul li {
+  display: inline-block;
+}
+
+#message ul .left {
+  background-color: #ffefc6;
+  color: #887230;
+}
+
+#message ul .right {
+  float: right;
+  margin-left: 10px;
+}

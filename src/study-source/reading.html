@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>猿著</title>
+
+  <!-- 引入boostrap的css样式 -->
+  <link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.css">
+  <!-- 引入自己的样式 -->
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/reading.css">
+  <!-- 引入jQuery -->
+  <script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <div class="header-top">
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="glyphicon glyphicon-align-justify"></i>
+      </label>
+      <div class="logo">
+        <a href="index.html"><img src="./images/logo.png"></a>
+      </div>
+      <div class="header-nav">
+        <ul class="header-ul">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="#">猿著</a></li>
+          <li><a href="face.html">猿创试题</a></li>
+          <li><a href="tool.html">猿材料</a></li>
+          <li><a href="society.html">猿社区</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- 文章 -->
+  <section id="message">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="img-thumbnail" src="images/info_1.jpg" alt="">
+        </div>
+        <div class="col-md-8 content">
+          <h4>分布式事务实战</h4>
+          <p>
+            引言：微服务倡导将复杂的单体应用拆分为若干个功能简单、松耦合的服务，这样可以降低开发难度、
+            增强扩展性、便于敏捷开发，从而被越来越多的开发者和公司推崇运用。但系统微服务化后，一个看似简单的功能，
+            内部可能需要调用多个服务并操作多个数据库实现，服务调用的分布式事务问题变的非常突出，几乎可以说是无法避免。
+            分布式事务已经成为微服务落地最大的阻碍，也是最具挑战性的一个技术难题。那么我们在实际开发中需要如何去应对呢？
+            本文将介绍在实际微服务开发中分布式事务的实战。
+          </p>
+          <ul>
+            <li class="left">架构</li>
+            <li class="left">事务</li>
+            <li class="left">分布式</li>
+            <li class="left">微服务</li>
+            <li class="right">5个月前</li>
+            <li class="right">
+              <i class="glyphicon glyphicon-thumbs-up"></i>
+              60
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <img class="img-thumbnail" src="images/info_2.jpg" alt="">
+        </div>
+        <div class="col-md-8 content">
+          <h4>我在职场第一次薪资翻倍的经历！</h4>
+          <p>
+            写在前面
+            我将用系列文章，回顾十年程序生涯，一方面是对职场生涯的阶段性总结，另一方面希望这些经历，对大家往后职场生涯有所启发。
+            我很庆幸一路走来皆是自己的选择，虽然也走了不少弯路，但那是我选择的生活。
+            一只站在树上的鸟儿，从来不会害怕树枝断裂，因为它相信的不是树枝，而是它自己的翅膀。
+            我是如何走向程序生涯
+            毕业即失业，找工作找到怀疑人生（已被删，查看此文公号内回复关键字：毕业）
+            深圳流水线工厂，我差点和主管打了起来
+            富士康14跳被我赶上了，流水线车间真的没有梦想
+            我在培训机构折腾的经历，再和大家聊聊这个行业
+          </p>
+          <ul>
+            <li class="left">职场</li>
+            <li class="left">资讯</li>
+            <li class="left">外包</li>
+            <li class="left">offer</li>
+            <li class="right">5个月前</li>
+            <li class="right">
+              <i class="glyphicon glyphicon-thumbs-up"></i>
+              86
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <img class="img-thumbnail" src="images/info_3.jpg" alt="">
+        </div>
+        <div class="col-md-8 content">
+          <h4>SOA架构和微服务架构的区别是什么？</h4>
+          <p>
+            首先SOA和微服务架构一个层面的东西，而对于ESB和微服务网关是一个层面的东西，一个谈到是架构风格和方法，一个谈的是实现工具或组件。
+            1.SOA（Service Oriented Architecture）“面向服务的架构”:他是一种设计方法，其中包含多个服务， 服务之间通过相互依赖最终提供一系列的功能。
+            一个服务 通常以独立的形式存在于操作系统进程中。各个服务之间 通过网络调用。
+            微服务架构 = 美团即时物流的分布式系统架构设计80%的SOA服务架构思想 + 100%的组件化架构思想 + 80%的领域建模思想
+          </p>
+          <ul>
+            <li class="left">架构</li>
+            <li class="left">微服务</li>
+            <li class="left">ESB</li>
+            <li class="left">SOA</li>
+            <li class="right">5个月前</li>
+            <li class="right">
+              <i class="glyphicon glyphicon-thumbs-up"></i>
+              80
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <img class="img-thumbnail" src="images/info_4.jpg" alt="">
+        </div>
+        <div class="col-md-8 content">
+          <h4>电商直播成2019最大风口：依然扶不起阿斗蘑菇街？</h4>
+          <p>
+            在已经过去的“双十一”狂欢购物节中，涌现出了很多效果惊人的新兴销售模式，推动今年11月1日到11日，全国网络零售额超过8700亿元人民币，同比增长了26.7%。
+            其中电商直播表现尤其突出。
+            阿里官方数据显示，今年超过50%的商家都在双十一当天开启了直播间。双十一开场仅1小时03分，
+            直播引导的成交就超过去年全天；8小时55分，淘宝直播大盘上的引导成交规模破百亿，其中在家装和消费电子等行业，直播引导的成交同比增长均超过400%。
+          </p>
+          <ul>
+            <li class="left">电商</li>
+            <li class="left">直播</li>
+            <li class="left">购物</li>
+            <li class="right">5个月前</li>
+            <li class="right">
+              <i class="glyphicon glyphicon-thumbs-up"></i>
+              22
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 尾部 -->
+  <footer>
+    <div class="container">
+      <h1>猿来如此</h1>
+    </div>
+  </footer>
+</body>
+
+</html>

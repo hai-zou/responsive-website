@@ -1,0 +1,40 @@
+#facing .container {
+  background-color: #fff;
+}
+
+#facing .container h1 {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+}
+
+#facing .content .row {
+  margin: 10px 0;
+}
+
+#facing .content p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #8492a6;
+  margin-top: 20px;
+}
+
+
+/* 媒体查询 */
+@media (max-width:960px) {
+
+  #facing .content .row {
+    margin: 20px 0;
+  }
+
+  #facing .content .row h3 {
+    margin-top: 0;
+    font-size: 20px;
+  }
+
+  #facing .content p {
+    font-size: 14px;
+    margin-top: 0;
+  }
+}
+
+@media (max-width:768px) {}
